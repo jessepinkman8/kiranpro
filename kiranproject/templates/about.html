@@ -1,0 +1,266 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Photogenic - Photo Gallery Category Bootstrap Responsive Website Template - About  : W3Layouts</title>
+    <!-- google-fonts -->
+    <link href="{% static '//fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap' %}"
+        rel="stylesheet">
+    <link href="{% static '//fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap' %}"
+        rel="stylesheet">
+    <!-- //google-fonts -->
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="{% static 'assets/css/style-starter.css' %}">
+</head>
+
+<body>
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1>
+                    <a class="navbar-brand" href="{% url 'app1:index' %}">
+                        MODA MEISTER
+                    </a>
+                </h1>
+                <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'app1:index' %}">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'app1:about' %}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'app1:services' %}">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'app1:contact' %}">Contact</a>
+                     
+                    
+                    </ul>
+                </div>
+                <!-- search button -->
+                <!-- <div class="search-right ml-lg-3">
+                    <div class="search-container">
+                        <form action="/search" method="get">
+                            <input class="search expandright" id="searchright" type="search" name="q"
+                                placeholder="Search">
+                            <label class="button searchbutton" for="searchright"><i class="fas fa-search"></i></label>
+                        </form>
+                    </div>
+                </div> -->
+                <!-- //search button -->
+                <!-- toggle switch for light and dark theme -->
+                <div class="cont-ser-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--//header-->
+
+    <!-- inner banner -->
+    <!-- <section class="inner-banner py-5">
+        <div class="w3l-breadcrumb py-lg-5">
+            <div class="container pt-sm-5 pt-4 pb-sm-4">
+                <h4 class="inner-text-title font-weight-bold pt-5">About</h4>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>About </li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+    <!-- //inner banner -->
+
+    <!-- about section -->
+    <section class="w3l-about py-5">
+        <div class="container py-md-5 py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 pr-lg-5">
+                    <h3 class="title-style mb-sm-3 mb-2"> About !</h3>
+                    <p>With about a decade of experience in commercial photography and with his exceptional
+                         visual marketing skills, Midhun Jayakrishnan has successfully engraved his signature
+                          into the current advertising industry across the Indian market.
+                        Having influenced over 30 brands such as Lapis Bard, William Pen, Lee, Himalaya, Heritage,
+                         US Polo, Cleartrip, Roush, TATA tea, Kannan Devan etc., the last 7 years of his professional
+                          career has laid a strong foundation to the growth of his potential..</p>
+                    <!-- <ul class="list-about-2 mt-sm-4 mt-3">
+                        <li class="py-1"><i class="far fa-check-square mr-2"></i>Ut enim ad minim
+                            veniam</li>
+                        <li class="py-2"><i class="far fa-check-square mr-2"></i>Quis nostrud
+                            exercitation
+                            ullamco
+                            laboris</li>
+                        <li class="py-1"><i class="far fa-check-square mr-2"></i>Nisi ut aliquip ex
+                            ea commodo
+                            consequat</li>
+                    </ul> -->
+                    <a class="btn btn-style btn-style-primary-2 mt-lg-5 mt-4" href="{% url 'app1:contact' %}">Contact us</a>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <img src="{% static 'assets/images/kiran2.jpg' %}" alt="" class="img-fluid" />
+                </div>
+            </div>
+
+    </section>
+
+
+    <!-- content with bg -->
+    <section class="w3l-content-bg">
+        <div class="container py-md-5 py-4">
+            <div class="row py-5">
+                <div class="col-md-7">
+                    <div class="left-content-bg">
+                        <p class="text-tag"> MODA MEISTER</p>
+                        <h4 class="text-head-content">Built For Creatives To Showcase Their Portfolio Beautiful !</h4>
+                        <a class="btn btn-style mt-4" href="{% url 'app1:services' %}">MY photos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="{% static 'assets/js/theme-change.js' %}"></script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- testimonial script -->
+    <script>
+        $(document).ready(function () {
+
+            $('.client-single').on('click', function (event) {
+                event.preventDefault();
+
+                var active = $(this).hasClass('active');
+
+                var parent = $(this).parents('.testi-wrap');
+
+                if (!active) {
+                    var activeBlock = parent.find('.client-single.active');
+
+                    var currentPos = $(this).attr('data-position');
+
+                    var newPos = activeBlock.attr('data-position');
+
+                    activeBlock.removeClass('active').removeClass(newPos).addClass('inactive').addClass(
+                        currentPos);
+                    activeBlock.attr('data-position', currentPos);
+
+                    $(this).addClass('active').removeClass('inactive').removeClass(currentPos).addClass(
+                        newPos);
+                    $(this).attr('data-position', newPos);
+
+                }
+            });
+
+        }(jQuery));
+    </script>
+    <!-- //testimonial script -->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!--bootstrap-->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- //bootstrap-->
+    <!-- //Js scripts -->
+</body>
+
+</html>
